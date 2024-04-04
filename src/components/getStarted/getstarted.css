@@ -1,0 +1,79 @@
+.border-gradient {
+    border: 5px solid;
+   
+  }
+  .get-started{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:auto;
+  }
+.each-getstarted-card{
+    margin: 1rem 1rem;
+    --angle: 0deg;
+    flex: 1 0 30%;
+    border: solid 2px;
+border-image-slice: 1;
+    border-image-source: linear-gradient(var(--angle),  #031626, #44AFF2);
+    animation: 3s rotate linear infinite;
+    height: 12rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem 0;  
+}  
+
+@keyframes rotate {
+    to {
+      --angle: 360deg;
+    }
+  }
+  @property --angle {
+    syntax: '<angle>';
+    initial-value: 0deg;
+    inherits: false;
+  }
+
+.get-started .each-getstarted-card:nth-of-type(4){
+  border-image-source: linear-gradient(var(--angle),   rgba(155, 2, 155, 0.5), rgba(254, 82, 255, 0.5));
+}
+.get-started .each-getstarted-card:nth-of-type(4){
+  border-image-source: linear-gradient(var(--angle),  rgba(126, 34, 206, 0.5), rgba(64, 15, 107, 0.5));
+}
+.get-started-icon{
+   width: 2rem;
+   height: 2rem;
+}
+
+
+.get-started button{
+  border-radius: 0.2rem;
+  padding: 0.1rem 0.5rem;
+   color: black;
+   border: 2px #2B88D9 solid;
+  background-color: #2B88D9;
+}
+.get-started button:hover{
+  background-color: #031626 !important;
+  color: #44AFF2;
+}
+
+
+
+.get-started-icon{
+  color: #2B88D9;
+}
+
+.get-about{
+    width: 80%;
+    height: 3rem;
+    margin: auto;
+    text-align: center;
+}
+
+@media(max-width: 1000px) {
+  .get-started{
+      flex-direction: column-reverse;
+  }
+}

@@ -1,0 +1,27 @@
+.faq-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;align-items: center;
+}
+
+.faq{
+    color: white !important;
+    text-align: start ;
+    width: 80%;
+    text-decoration: none;
+    background-color: #1111;
+    padding: 2rem;
+    border-radius: 1rem;
+}
+.text-gray-700{
+    color: white !important;
+}
+
+@media (max-width: 1000px) {
+    .faq{
+        width: 100%;
+    }
+    .text-xl{
+        font-size: .9rem !important;
+    }
+}

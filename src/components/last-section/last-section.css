@@ -1,0 +1,44 @@
+.where-to-buy{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center
+
+}
+.where-to-buy img{
+    width: 6rem;
+}
+.where-to-buy button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+}
+.partners{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.partners-img{
+    width: 100%;
+    display: flex;
+   align-items: center;
+    justify-content: space-evenly;
+}
+.partners-img img{
+    width: 15rem;
+}
+.partners-img img:nth-of-type(2){
+    width: 15rem;
+}
+@media (max-width: 600px) {
+    .partners-img img{
+        margin-top: 2rem;
+        width: 10rem;
+       
+    }
+    .partners-img{
+        align-items: center;
+       flex-direction: column;
+    }
+}
