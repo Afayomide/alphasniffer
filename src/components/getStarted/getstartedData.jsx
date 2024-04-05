@@ -22,7 +22,7 @@ const GetStartedData = [
         name: "Discover AlphaSniffer",
         about: "Get Educated about everything Alphasniffer",
         button: "DOCUMENTATION",
-        link: "https://docs.dexsniffer.io/"
+        link: "https://docs.alphasniffer.io"
     }
 
 ]
